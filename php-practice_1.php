@@ -92,7 +92,12 @@ foreach ($kanto as $ken => $kencho) {
 }
 
 // Q10 関数-1
-
+function hello($name)
+{
+  echo $name . 'さん、こんにちは。' . "\n";
+}
+hello('山田');
+hello('田中');
 
 // Q11 関数-2
 
