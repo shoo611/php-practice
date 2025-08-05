@@ -9,7 +9,8 @@ echo $num . "\n";
 echo ($num / 2);
 
 // Q3 日付操作
-
+date_default_timezone_set('Asia/Tokyo');
+echo '現在時刻は、' . date('Y年m月d日 H時i分s秒') . 'です。';
 
 // Q4 条件分岐-1 if文
 
