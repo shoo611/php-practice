@@ -56,6 +56,28 @@ foreach ($personalInfos as $key => $value) {
 }
 
 // Q2-3
+$personalInfos = [
+  [
+    'name' => 'Aさん',
+    'mail' => 'aaa@mail.com',
+    'tel' => '09011112222'
+  ],
+  [
+    'name' => 'Bさん',
+    'mail' => 'bbb@mail.com',
+    'tel' => '08033334444'
+  ],
+  [
+    'name' => 'Cさん',
+    'mail' => 'ccc@mail.com',
+    'tel' => '09055556666'
+  ],
+];
+$ageList = [25, 30, 18];
+foreach ($personalInfos as $key => $value) {
+  $personalInfos[$key]['age'] = $ageList[$key];
+}
+var_dump($personalInfos);
 
 // Q3 オブジェクト-1
 
