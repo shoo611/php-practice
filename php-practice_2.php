@@ -92,16 +92,16 @@ class Student
     echo '学籍番号' . $this->studentId . '番の生徒は' . $this->studentName . 'です。';
   }
 
-  public function attend()
+  public function attend($subject)
   {
-    echo '授業に出席しました。';
+    echo $this->studentName . 'は' . $subject . 'の授業に出席しました。学籍番号:' . $this->studentId;
   }
 }
 
 $yamada = new Student('40', '山田');
 
 // Q4 オブジェクト-2
-
+$yamada->attend('PHP');
 
 // Q5 定義済みクラス
 ?>
