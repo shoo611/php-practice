@@ -108,4 +108,10 @@ $yamada->attend('PHP');
 $datetime = new DateTime();
 $datetime->modify('-1 month');
 echo $datetime->format('Y-m-d');
+
+// Q5-2
+$date1 = new DateTime();
+$date2 = new DateTime('1992-04-25');
+$interval = $date1->diff($date2);
+echo 'あの日から' . $interval->format('%a日') . '経過しました。';
 ?>
