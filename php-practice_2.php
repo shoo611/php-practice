@@ -80,7 +80,25 @@ foreach ($personalInfos as $key => $value) {
 var_dump($personalInfos);
 
 // Q3 オブジェクト-1
+class Student
+{
+  public $studentId;
+  public $studentName;
 
+  public function __construct($id, $name)
+  {
+    $this->studentId = $id;
+    $this->studentName = $name;
+    echo '学籍番号' . $this->studentId . '番の生徒は' . $this->studentName . 'です。';
+  }
+
+  public function attend()
+  {
+    echo '授業に出席しました。';
+  }
+}
+
+$yamada = new Student('40', '山田');
 
 // Q4 オブジェクト-2
 
