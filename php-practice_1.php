@@ -33,7 +33,7 @@ $kanto = [
   '栃木県',
   '千葉県',
   '群馬県',
-  '茨城県'
+  '茨城県',
 ];
 echo $kanto[3] . 'と' . $kanto[4] . 'は関東地方の都道府県です。';
 
@@ -45,7 +45,7 @@ $kanto = [
   '埼玉県' => 'さいたま市',
   '栃木県' => '宇都宮市',
   '群馬県' => '前橋市',
-  '茨城県' => '水戸市'
+  '茨城県' => '水戸市',
 ];
 foreach ($kanto as $ken => $kencho) {
   echo $kencho . "\n";
@@ -59,7 +59,7 @@ $kanto = [
   '埼玉県' => 'さいたま市',
   '栃木県' => '宇都宮市',
   '群馬県' => '前橋市',
-  '茨城県' => '水戸市'
+  '茨城県' => '水戸市',
 ];
 foreach ($kanto as $ken => $kencho) {
   if ($ken == '埼玉県') {
@@ -77,7 +77,7 @@ $kanto = [
   '群馬県' => '前橋市',
   '茨城県' => '水戸市',
   '愛知県' => '名古屋市',
-  '新潟県' => '新潟市'
+  '新潟県' => '新潟市',
 ];
 foreach ($kanto as $ken => $kencho) {
   if ($ken == '愛知県' or $ken == '新潟県') {
@@ -90,10 +90,10 @@ foreach ($kanto as $ken => $kencho) {
 // Q10 関数-1
 function hello($name)
 {
-  echo $name . 'さん、こんにちは。' . "\n";
+  return $name . 'さん、こんにちは。' . "\n";
 }
-hello('山田');
-hello('田中');
+echo hello('山田');
+echo hello('田中');
 
 // Q11 関数-2
 function calcTaxInPrice($price)
