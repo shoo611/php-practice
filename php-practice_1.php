@@ -98,9 +98,11 @@ echo hello('田中');
 // Q11 関数-2
 function calcTaxInPrice($price)
 {
-  echo '1000円の商品の税込価格は' . ($price *= 1.1) . '円です。';
+  $taxInPrice = $price * 1.1;
+  return $price . '円の商品の税込価格は' . $taxInPrice . '円です。';
+
 }
-calcTaxInPrice($price = 1000);
+echo calcTaxInPrice(1000);
 
 // Q12 関数とif文
 function distinguishNum($number)
